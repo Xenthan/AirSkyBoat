@@ -46,6 +46,8 @@ UPDATE mob_groups SET content_tag='ROV' WHERE zoneid='288' OR zoneid='289' OR zo
 UPDATE mob_groups SET content_tag='NEODYNA' WHERE zoneid='39' OR zoneid='40' OR zoneid='41' OR zoneid='42' OR zoneid='134' OR zoneid='135'
                   OR zoneid='185' OR zoneid='186' OR zoneid='187' OR zoneid='188';
 
+UPDATE mob_groups SET content_tag='WOTG' WHERE name='Pixie' AND poolid='3148'
+
 -- ------------------------------------------------------------
 -- Carpenters_Landing (Zone 2)
 -- ------------------------------------------------------------
@@ -836,6 +838,7 @@ UPDATE mob_groups SET minLevel = 8, maxLevel = 10 WHERE name = "Barghest"       
 UPDATE mob_groups SET content_tag='WOTG' WHERE name='Wake_Warder_Wanda' AND groupid='22' AND zoneid='118';
 UPDATE mob_groups SET content_tag='WOTG' WHERE name='Backoo' AND groupid='55' AND zoneid='118';
 UPDATE mob_groups SET content_tag='ROV' WHERE name='Abyssdiver' AND groupid='58' AND zoneid='118';
+UPDATE mob_groups SET content_tag='VOIDWATCH' WHERE name='Botulus_Rex' AND groupid='53' AND zoneid='118';
 
 UPDATE mob_groups SET minLevel = 15, maxLevel = 18 WHERE name = "Sylvestre"       and zoneid = 118;
 UPDATE mob_groups SET minLevel = 20, maxLevel = 10 WHERE name = "Snipper"         and zoneid = 118;
