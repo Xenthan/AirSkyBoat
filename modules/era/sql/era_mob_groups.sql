@@ -95,6 +95,7 @@ UPDATE mob_groups SET content_tag='WOTG' WHERE name='Magnotaur' AND groupid='39'
 UPDATE mob_groups SET content_tag='SYNERGY' WHERE name='Skvader' AND groupid='11' AND zoneid='5';
 UPDATE mob_groups SET content_tag='SYNERGY' WHERE name='Frost_Flambeau' AND groupid='49' AND zoneid='5';
 UPDATE mob_groups SET content_tag='ABYSSEA' WHERE name='Scowlenkos' AND groupid='38' AND zoneid='5';
+UPDATE mob_groups SET content_tag='ROV' WHERE name='Camahueto' AND groupid='53' AND zoneid='5';
 
 UPDATE mob_groups set minLevel = 61 WHERE name = "Uleguerand_Tiger" and zoneid = 5;
 UPDATE mob_groups set maxLevel = 68 WHERE name = "Demons_Elemental" and zoneid = 5;
