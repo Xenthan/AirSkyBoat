@@ -835,6 +835,7 @@ UPDATE mob_groups SET minLevel = 8, maxLevel = 10 WHERE name = "Barghest"       
 
 UPDATE mob_groups SET content_tag='WOTG' WHERE name='Wake_Warder_Wanda' AND groupid='22' AND zoneid='118';
 UPDATE mob_groups SET content_tag='WOTG' WHERE name='Backoo' AND groupid='55' AND zoneid='118';
+UPDATE mob_groups SET content_tag='ROV' WHERE name='Abyssdiver' AND groupid='58' AND zoneid='118';
 
 UPDATE mob_groups SET minLevel = 15, maxLevel = 18 WHERE name = "Sylvestre"       and zoneid = 118;
 UPDATE mob_groups SET minLevel = 20, maxLevel = 10 WHERE name = "Snipper"         and zoneid = 118;
