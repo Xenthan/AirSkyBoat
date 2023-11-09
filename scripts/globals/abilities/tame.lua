@@ -32,24 +32,12 @@ abilityObject.onUseAbility = function(player, target, ability)
         return 0
     end
 
-    local tameBonus   = 0
+    local tameBonus   = player:getMod(xi.mod.TAME_SUCCESS_RATE)
     local charmChance = xi.magic.getCharmChance(player, target, false)
+    charmChance = charmChance + tameBonus
+    utils.clamp(charmChance, 0, 95)
 
-    for chance, bonus in pairs(tameSort) do
-        if charmChance > chance then
-            tameBonus = bonus
-            break
-        end
-    end
-
-    local params = {}
-    params.includemab = true
-    params.element = xi.magic.ele.NONE
-    params.maccBonus = tameBonus + player:getMod(xi.mod.TAME_SUCCESS_RATE)
-
-    local resist = xi.magic.applyAbilityResistance(player, target, params)
-
-    if resist <= 0.25 then
+    if charmChance < math.random(0, 100) then
         ability:setMsg(xi.msg.basic.JA_MISS_2)
         return 0
     else
