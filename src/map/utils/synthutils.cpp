@@ -396,7 +396,11 @@ namespace synthutils
                 {
                     random = xirand::GetRandomNumber(1.);
 
-                    if (random < 0.0366)
+                    //Percentages for TOTAL desynths at T0:  22.5% NQ, 16.308% HQ1, 5.36% HQ2, 3.66% HQ3 (based on previous values, could not find the source used)
+                    //https://www.bluegartr.com/threads/60046-Quick-desynth-question is the only reasonably close source I could find but I'm hesitant to edit actual values
+                    //These limits need to take into account the 22.5% chance of even getting to this HQ check
+                    
+                    if (random < 0.1627)
                     {
                         result = SYNTHESIS_HQ3;
                     }
