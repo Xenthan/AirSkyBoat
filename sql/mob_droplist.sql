@@ -10083,7 +10083,7 @@ INSERT INTO `mob_droplist` VALUES (1210,0,0,1000,19037,@VCOMMON); -- Light Grip 
 INSERT INTO `mob_droplist` VALUES (1211,1,1,@ALWAYS,1558,250); -- Attestation Of Glory (Group 1, Always, 100%)
 INSERT INTO `mob_droplist` VALUES (1211,1,1,@ALWAYS,1559,250); -- Attestation Of Righteousness (Group 1, Always, 100%)
 INSERT INTO `mob_droplist` VALUES (1211,1,1,@ALWAYS,1561,250); -- Attestation Of Force (Group 1, Always, 100%)
-INSERT INTO `mob_droplist` VALUES (1211,1,1,@Always,1821,250); -- Attestation Of Invulnerability (Group 1, Always, 100%)
+INSERT INTO `mob_droplist` VALUES (1211,1,1,@ALWAYS,1821,250); -- Attestation Of Invulnerability (Group 1, Always, 100%)
 
 -- ZoneID: 132 - Grandgousier -- TODO: Abyssea NM
 INSERT INTO `mob_droplist` VALUES (1212,0,0,1000,11742,@COMMON); -- Cognition Belt (Common, 15%)
